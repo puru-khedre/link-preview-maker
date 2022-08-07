@@ -1,11 +1,11 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-// const getMetaData = require("./getMetaData")
-const getMetaData = import("../../../utils/getMetaData")
- 
-export default function handler(req, res) {
+const linkPreviewGenerator = require("")
 
-    const { url, name } = req.query;
-    // getMetaData("https://github.com/puru-khedre/link-preview-maker").then(data => console.log(data));
+// const url = "https://github.com/sindresorhus/got";
+
+export default function handler(req, res) {
+    // const { url } = req.query;
+    const previewData = await linkPreviewGenerator("https://github.com/sindresorhus/got");
+    console.log(previewData);
 
     res.status(200).json({ name: 'John Doe and' })
 }
