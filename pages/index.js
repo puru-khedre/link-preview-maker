@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Canvas from '../components/Canvas'
 import NavBar from '../components/NavBar'
 import SearchAndPreview from '../components/SearchAndPreview'
 
@@ -25,6 +26,7 @@ export default function Home() {
           Link Previewer Maker
         </h1>
         <SearchAndPreview />
+        <Canvas/>
       </main>
 
 
