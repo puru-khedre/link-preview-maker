@@ -26,7 +26,6 @@ export default function Home() {
           Link Previewer Maker
         </h1>
         <SearchAndPreview />
-        <Canvas/>
       </main>
 
 
