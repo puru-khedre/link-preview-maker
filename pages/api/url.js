@@ -1,5 +1,5 @@
 import getMetaData from "../../utils/getMetaData";
-
+import newrelic from "newrelic"
 export default async function handler(req, res) {
     const { url } = req.query;
     try {
